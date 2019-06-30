@@ -291,7 +291,7 @@ error
 .submit { background: #655046; color: #fff; border-radius: 4px; border: none; padding: 20px; font-size: 1em; margin-top: 5%; }
 .submit:hover { cursor: pointer; background: #6d574c; }
 
-.select { margin-top: 2%; padding: 2%; background: #fff; font-size: 1em; height: 50%; border: none; box-sizing: border-box; }
+.select { margin-top: 2%; padding: 2%; background: #fff; font-size: 1em; height: 50%; border: none; box-sizing: border-box; height: 30px; }
 
 .input { border-radius: 3px; border: none; background: #fff; font-size: 1em; padding: 5%; margin-top: 2%; }
 
