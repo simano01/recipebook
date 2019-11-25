@@ -470,7 +470,8 @@ function uploadImg($file, $key){
       }
 
       //exif_imagetype関数は「IMAGETYPE_GIF」「IMAGETYPE_JPEG」などの定数を返す
-      $type = @exif_imagetype($file['tmp_name']);
+      $pi = pathinfo($file['tmp_name']);
+      $type = $pi['extension'];
       if(!in_array($type, [IMAGETYPE_GIF, IMAGETYPE_JPEG, IMAGETYPE_PNG], true)){
         throw new RuntimeException('画像形式が未対応です');
       }
