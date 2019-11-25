@@ -469,7 +469,7 @@ function uploadImg($file, $key){
           throw new RuntimeException('その他のエラーが発生しました');
       }
 
-      $type = pathinfo($file, PATHINFO_EXTENSION);
+      $type = pathinfo($file['tmp_name'], PATHINFO_EXTENSION);
       if(!in_array($type, [IMAGETYPE_GIF, IMAGETYPE_JPEG, IMAGETYPE_PNG], true)){
         throw new RuntimeException('画像形式が未対応です');
       }
