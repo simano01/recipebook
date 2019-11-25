@@ -1,9 +1,9 @@
 <?php 
 function dbConnect(){
   //DB接続準備
-  $dsn = 'mysql:dbname=recipebook;host=localhost;charset=utf8';
-  $user = 'root';
-  $password = 'root';
+  $dsn = 'mysql:dbname=heroku_77fa3de2770433b;host=us-cdbr-iron-east-05.cleardb.net;charset=utf8';
+  $user = 'b8a5e8febecf1c';
+  $password = 'acf0c311';
   $options = array(
     //SQL実行失敗時にはエラーコードを吐き出す設定
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
