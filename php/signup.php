@@ -33,12 +33,14 @@ if(!empty($_POST)){
       //例外処理
       try{
         $dbh = dbConnect();
+        var_dump('db接続');
         $sql = 'INSERT INTO users (loginUser_id,password,login_time,create_date) VALUES(:loginUser_id,:password,:login_time,:create_date)';
         $data = array(':loginUser_id' => $loginUser_id, ':password' => password_hash($pass, PASSWORD_DEFAULT),
                       ':login_time' => date('Y-m-d H:i:s'),
                       ':create_date' => date('Y-m-d H:i:s'));
         //クエリ実行
         $stmt = queryPost($dbh, $sql, $data);
+        var_dump('db実行');
 
         if($stmt){
           $sesLimit = 60*60;
