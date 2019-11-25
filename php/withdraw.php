@@ -52,8 +52,8 @@ debug('画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
   <main class="main">
     <h2>退会</h2>
     <p>退会をご希望の場合は、以下の「退会する」ボタンを押して下さい。</p>
-    <form class="form" action="" method="post">
-      <input type="submit" name="submit" value="退会する" class="submit">
+    <form action="" method="post">
+      <input type="submit" name="submit" value="退会する" class="submit withdraw-submit">
       <div class="area-msg">
         <?php if(!empty($err_msg['common'])) echo $err_msg['common']; ?>
       </div>

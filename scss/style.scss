@@ -642,6 +642,9 @@ mypage
     .recipeList-body {
       .panel {
         margin-right: 1.7%;
+        &-title {
+          margin-top: 10px;
+        }
       }
       &.flex {
         margin-left: 0;
@@ -991,6 +994,11 @@ error
     background: $footer-light;
   }
 }
+.submit.withdraw-submit {
+  display: block;
+  margin: 0 auto;
+  float: inherit;
+}
 .select {
   margin-top: 2%;
   padding: 2%;
@@ -1131,10 +1139,13 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
-    .logo-right_img img {
-      width: 90%;
-      height: 90%;
-      vertical-align: bottom;
+    .logo-right_img {
+      display: flex;
+      img {
+        width: 90%;
+        height: 90%;
+        vertical-align: bottom;
+      }
     }
     .logo-right_text {
       span {
@@ -1324,7 +1335,7 @@ form
   .js-imgDrop {
     position: relative;
     width: 50%;
-    height: 100%;
+    height: 200px;
     background: #f6f5f4;
     color: #ccc;
     text-align: center;
@@ -1972,6 +1983,7 @@ error
   text-align: center;
   font-size: $font_r;
   line-height: 40px;
+  padding: 2% 0;
 }
 .submit {
   background: $footer;
