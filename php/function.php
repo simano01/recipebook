@@ -119,14 +119,14 @@ function validUserIdDup($str, $key){
 //バリデーション関数（最小文字数チェック）
 function validMinLen($str, $key, $min = 6){
   global $err_msg;
-  if(mb_strlen($str) < $min){
+  if(strlen($str) < $min){
     $err_msg[$key] = MSG04;
   }
 }
 //バリデーション関数（最大文字数チェック）
 function validMaxLen($str, $key, $max){
   global $err_msg;
-  if(mb_strlen($str) > $max){
+  if(strlen($str) > $max){
     $err_msg[$key] = MSG05;
   }
 }
