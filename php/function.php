@@ -470,7 +470,7 @@ function uploadImg($file, $key){
       }
 
       $type = pathinfo($file['tmp_name'], PATHINFO_EXTENSION);
-      if(!in_array($type, [IMAGETYPE_GIF, IMAGETYPE_JPEG, IMAGETYPE_PNG], true)){
+      if(!in_array($type, [gif, jpeg, png], true)){
         throw new RuntimeException('画像形式が未対応です');
       }
 
