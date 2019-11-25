@@ -642,9 +642,6 @@ mypage
     .recipeList-body {
       .panel {
         margin-right: 1.7%;
-        &-title {
-          margin-top: 10px;
-        }
       }
       &.flex {
         margin-left: 0;
@@ -720,7 +717,8 @@ mypage
     }
     .panel-body {
       color: $footer;
-      font-size: $font_m
+      font-size: $font_m;
+      margin-top: 10px;
     }
     &:hover {
       opacity: .8;

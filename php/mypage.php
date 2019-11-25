@@ -57,7 +57,7 @@ debug('画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
           ?>
             <a class="panel" href="recipeDetail.php?r_id=<?php echo $val['recipe_id'].'&l_p='.$likeCurrentPageNum.'&c_p='.$cookCurrentPageNum; ?>">
               <div class="panel-head">
-                <img src="<?php echo sanitize($val['image']); ?>" alt="<?php echo sanitize($val['recipe_name']); ?>">
+                <img src="../img/nikujaga.jpg" alt="<?php echo sanitize($val['recipe_name']); ?>">
               </div>
               <div class="panel-body">
                 <p class="panel-title"><?php echo sanitize($val['recipe_name']); ?></p>
@@ -121,7 +121,7 @@ debug('画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
           ?>
             <a class="panel" href="recipeDetail.php?r_id=<?php echo $val['recipe_id'].'&l_P='.$likeCurrentPageNum.'&c_p='.$cookCurrentPageNum; ?>">
               <div class="panel-head">
-                <img src="<?php echo sanitize($val['image']); ?>" alt="<?php echo sanitize($val['recipe_name']); ?>">
+                <img src="../img/nikujaga.jpg" alt="<?php echo sanitize($val['recipe_name']); ?>">
               </div>
               <div class="panel-body">
                 <p class="panel-title"><?php echo sanitize($val['recipe_name']); ?></p>

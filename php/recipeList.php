@@ -113,7 +113,7 @@ debug('画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
           ?>
             <a href="recipeDetail.php?r_id=<?php echo (empty($_GET['c_id'])) ? $val['recipe_id'].'&p='.$currentPageNum : $val['recipe_id'].'&p='.$currentPageNum.'&c_id='.$getLink; ?>" class="panel">
               <div class="panel-head">
-                <img src="<?php echo sanitize($val['image']); ?>" alt="<?php echo sanitize($val['recipe_name']); ?>">
+                <img src="../img/nikujaga.jpg" alt="<?php echo sanitize($val['recipe_name']); ?>">
               </div>
               <div class="panel-body">
                 <p class="panel-title"><?php echo sanitize($val['recipe_name']); ?></p>

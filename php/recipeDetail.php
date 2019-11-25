@@ -63,7 +63,7 @@ debug('画面表示処理終了<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     <div class="recipeDetail-main">
       <div class="flex main-top">
         <div class="recipe-image">
-          <img src="<?php echo sanitize($viewData['image']); ?>" alt="<?php echo sanitize($viewData['recipe_name']); ?>">
+          <img src="../img/nikujaga.jpg" alt="<?php echo sanitize($viewData['recipe_name']); ?>">
         </div>
         <div class="recipe-ingredient border">
           <h3 class="sub-title">材料<span class="n_people">（<?php echo sanitize($viewData['n_people']); ?>人分）</span></h3>
