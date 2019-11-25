@@ -469,9 +469,7 @@ function uploadImg($file, $key){
           throw new RuntimeException('その他のエラーが発生しました');
       }
 
-      //exif_imagetype関数は「IMAGETYPE_GIF」「IMAGETYPE_JPEG」などの定数を返す
-      $pi = pathinfo($file['tmp_name']);
-      $type = $pi['extension'];
+      $type = pathinfo($file, PATHINFO_EXTENSION);
       if(!in_array($type, [IMAGETYPE_GIF, IMAGETYPE_JPEG, IMAGETYPE_PNG], true)){
         throw new RuntimeException('画像形式が未対応です');
       }
