@@ -2,11 +2,11 @@
 <!-- head -->
 <?php
   $siteTitle = '/ トップページ';
-  require('head.php');
+  require('php/head.php');
 ?>
 
   <!-- header -->
-  <?php require('header.php'); ?>
+  <?php require('php/header.php'); ?>
 
   <!-- main -->
   <main id="index" class="bg-main">
@@ -14,12 +14,12 @@
       <div class="form-text">
         <p>ウェブ上に自分のレシピ本を作る</p>
         <div class="flex">
-          <a href="signup.php"><button class="submit">ユーザー登録</button></a>
-          <a href="login.php"><button class="submit">ログイン</button></a>
+          <a href="php/signup.php"><button class="submit">ユーザー登録</button></a>
+          <a href="php/login.php"><button class="submit">ログイン</button></a>
         </div>
       </div>
     </div>
   </main>
 
   <!-- footer -->
-  <?php require('footer.php'); ?>
+  <?php require('php/footer.php'); ?>
